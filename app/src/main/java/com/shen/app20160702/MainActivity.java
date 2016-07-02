@@ -3,7 +3,9 @@ package com.shen.app20160702;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import com.squareup.picasso.Picasso;
 
@@ -20,5 +22,9 @@ public class MainActivity extends AppCompatActivity {
 
         Picasso.with(context).load("https://cdn.free.com.tw/blog/wp-content/uploads/2014/08/Placekitten480-g.jpg").into(imageView);
 
+    }
+
+    public void onClick(View view) {
+        Toast.makeText(context , "我是GitHub初學者!!" , Toast.LENGTH_SHORT).show();
     }
 }
